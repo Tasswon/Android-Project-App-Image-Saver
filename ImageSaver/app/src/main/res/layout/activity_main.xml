@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Styling"
+    tools:context="ca.algomau.imagesaver.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r1"
+                android:text="art"
+                style="@style/Styling"
+                android:onClick="updateNumbers"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r2"
+                android:text="environment"
+                style="@style/Styling"
+                android:onClick="updateNumbers"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r3"
+                android:text="memes"
+                style="@style/Styling"
+                android:onClick="updateNumbers"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r4"
+                android:text="other"
+                style="@style/Styling"
+                android:onClick="updateNumbers"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r5"
+                android:text="total collection"
+                style="@style/Styling"
+                android:onClick="updateNumbers"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/border">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Styling"
+            android:text="art" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Styling"
+            android:text="environment" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Styling"
+            android:text="memes" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Styling"
+            android:text="other" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/clrAll"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:onClick="clearPictures"
+                android:text="Delete Selection"
+                style="@style/ButtonStyle"/>
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:onClick="information"
+                android:text="App Information"
+                style="@style/ButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnEnter"
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="enter"
+            android:text="explore images" />
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            style="@style/Styling"/>
+    </LinearLayout>
+</RelativeLayout>

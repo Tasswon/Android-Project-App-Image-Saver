@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    style="@style/Styling"
+    tools:context="ca.algomau.imagesaver.ExpandImage">
+
+    <ImageView
+        android:id="@+id/imagePick"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:background="@color/DarkerBlue"
+            android:text="Switch to landscape for a better view..."
+            style="@style/Styling"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#FDFDFD"
+            android:id="@+id/getUrl"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:weightSum="1" >
+            <Button
+                android:id="@+id/downloadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:onClick="download"
+                style="@style/ButtonStyle"
+                android:layout_weight="0.15"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/displayUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display URL"
+                android:onClick="displayURL"
+                style="@style/ButtonStyle"
+                android:layout_weight="0.15"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:onClick="cancel"
+                style="@style/ButtonStyle"
+                android:layout_weight="0.15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

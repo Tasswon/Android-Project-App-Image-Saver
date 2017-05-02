@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Image Saver</string>
+
+    <string name="app_info">
+        Image Saver is an image library app,\ndesigned to allow a user to save\nlinks to desired jpg images on\ntheir devices.\n\nHere are a list of features:\n\t\t1)Save, load, or delete jpg URLs\n\t\t2)Organize images by selected\n\t\tcategories\n\t\t3)Download saved imges to the\n\t\tapp download folder
+    </string>
+
+    <string-array name="Categories">
+        <item>Art</item>
+        <item>Environment</item>
+        <item>Memes</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="500dp"
+    android:padding="5dp"
+    tools:context="ca.algomau.imagesaver.DialogFrag">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Category"
+        android:textSize="20sp"
+        android:textColor="@color/DarkerBlue"
+        android:typeface="serif"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/art"
+            android:text="art"
+            android:checked="true"
+            android:textColor="@color/DarkerBlue"
+            android:typeface="serif"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/environment"
+            android:text="environment"
+            android:textColor="@color/DarkerBlue"
+            android:typeface="serif"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/memes"
+            android:text="memes"
+            android:textColor="@color/DarkerBlue"
+            android:typeface="serif"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other"
+            android:text="other"
+            android:textColor="@color/DarkerBlue"
+            android:typeface="serif"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a URL"
+        android:textColor="@color/DarkerBlue"
+        android:typeface="serif"/>
+</LinearLayout>
+

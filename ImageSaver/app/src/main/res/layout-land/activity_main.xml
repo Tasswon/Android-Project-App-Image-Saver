@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Styling"
+    tools:context="ca.algomau.imagesaver.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:weightSum="1"
+        android:background="@drawable/border">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.15">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNumbers"
+                android:text="art"
+                android:background="@color/DarkerBlue"
+                style="@style/Styling"/>
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNumbers"
+                android:text="environment"
+                android:background="@color/DarkerBlue"
+                style="@style/Styling"/>
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNumbers"
+                android:text="memes"
+                android:background="@color/DarkerBlue"
+                style="@style/Styling"/>
+
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNumbers"
+                android:text="other"
+                android:background="@color/DarkerBlue"
+                style="@style/Styling"/>
+
+            <RadioButton
+                android:id="@+id/r5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateNumbers"
+                android:text="total collection"
+                android:background="@color/DarkerBlue"
+                style="@style/Styling"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/border"
+        android:layout_alignParentTop="true">
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="art"
+            android:layout_marginLeft="2dp"
+            android:background="@color/DarkerBlue"
+            style="@style/Styling"/>
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="environment"
+            android:layout_marginLeft="2dp"
+            android:background="@color/DarkerBlue"
+            style="@style/Styling"/>
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="memes"
+            android:layout_marginLeft="2dp"
+            android:background="@color/DarkerBlue"
+            style="@style/Styling"/>
+
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:layout_marginLeft="2dp"
+            android:background="@color/DarkerBlue"
+            style="@style/Styling"/>
+
+        <Button
+            android:id="@+id/clrAll"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:onClick="clearPictures"
+            android:text="Delete Selection"
+            android:layout_marginLeft="5dp"
+            style="@style/ButtonStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:onClick="information"
+            android:text="App Information"
+            style="@style/ButtonStyle"/>
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:onClick="enter"
+            android:text="explore images"
+            style="@style/ButtonStyle"/>
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            style="@style/Styling"/>
+    </LinearLayout>
+
+</RelativeLayout>
